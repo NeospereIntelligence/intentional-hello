@@ -1,7 +1,17 @@
-let count = 0;
+document.addEventListener("DOMContentLoaded", function () {
 
-function changeMessage() {
-    count++;
-    document.getElementById("message").innerText =
-        "You clicked " + count + " times 🔥";
-}
+    let count = 0;
+
+    const button = document.getElementById("clickButton");
+    const message = document.getElementById("message");
+
+    function updateMessage() {
+        message.innerText = "You clicked " + count + " times 🔥";
+    }
+
+    button.addEventListener("click", function () {
+        count++;
+        updateMessage();
+    });
+
+});
