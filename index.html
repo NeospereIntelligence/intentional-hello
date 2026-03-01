@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intentional Hello</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <h1 id="message">Hello Bansi 🚀</h1>
+
     <button onclick="changeMessage()">Click Me</button>
 
-    <script>
-        // This function will change the text inside the header element with the id "message"
-        function changeMessage() {
-            // 1. The function changeMessage is triggered (for example, when the button is clicked).
-            // 2. It accesses the DOM (Document Object Model) to find the HTML element with the id "message".
-            // 3. It sets the innerText property of that element to "You are building your first project 🔥".
-            //    This updates the visible text on the web page inside the <h1> tag.
-        }
-            document.getElementById("message").innerText = "You are building your first project 🔥";
-        }
-    </script>
+    <!-- Link JavaScript (keep this at bottom) -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
